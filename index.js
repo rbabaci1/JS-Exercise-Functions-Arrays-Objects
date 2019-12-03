@@ -211,8 +211,13 @@ function sortCarInventory(inventory) {
  *     (1) an array which is an inventory of cars like the one inside /data/inventory.js.
  * getModelYears returns an array containing all the 'car_year's in the inventory.
 */
-function getModelYears(/* code here */) {
-  /* code here */
+function getModelYears(inventory) {
+  const car_years = [];
+
+  for (var i = 0; i < inventory.length; i++) {
+    car_years.push(inventory[i].car_year);
+  }
+  return car_years;
 }
 
 /**
@@ -227,8 +232,8 @@ function getModelYears(/* code here */) {
  * with a `car_year` which is at most the given desired max year,
  * in the same order as they appear in the original inventory.
 */
-function getOlderCars(/* code here */) {
-  /* code here */
+function getOlderCars(inventory, max_year) {
+  
 }
 
 /**
@@ -282,7 +287,7 @@ const argTimesTwo = null; // code here!
  *         (2) returns the updated value of the `odometer`.
 */
 function carMaker(/* code here */) {
-  /* code here */
+  
 }
 
 /// ////// END OF CHALLENGE /////////
