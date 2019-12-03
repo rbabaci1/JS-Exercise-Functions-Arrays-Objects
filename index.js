@@ -62,7 +62,7 @@ function makePersonObject(id, name, email) {
  * the returned value should look like `Hello, my name is Leia`.
 */
 function getName(obj) {
-  
+  return `Hello, my name is ${obj.name}`;
 }
 
 /**
